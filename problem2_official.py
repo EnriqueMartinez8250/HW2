@@ -3,7 +3,7 @@ import sys
 
 
 
-###Here is my timeEfficieny algorithm, i added a new set of features
+####Here is my timeEfficieny algorithm, i added a new set of features
 def timeEfficiency(funcName, maxNum):
     start_time = time.time()
     comparison = funcName(maxNum)   #problem 2-2 the comparison count
@@ -72,7 +72,7 @@ def main():
 
     while(user_input == True):
         print("Please select which file you wish to run: ")
-        user_selection = int(input("1. rand1000000.txt\n2. rand1000.txt\n3. Exit\nUserSelection: "))
+        user_selection = int(input("1. rand1000000.txt\n2. rand1000.txt\n3. rand100000.txt\n4. rand250000.txt\n5. rand500000.txt\n6. Exit\nUserSelection: "))
         if(user_selection == 1):
             file = open("rand1000000.txt","r")
             header = file.readline()
@@ -95,7 +95,41 @@ def main():
             timeEfficiency(mergeSort,list)
             print("Sorted file: ",list)
             break
-        if(user_selection == 3):
+        if(user_selection ==3):
+            file = open("rand100000.txt","r")
+            header = file.readline()
+            list = file.read().split()
+            print("The time for Insertionsort Algorithm is below")
+            timeEfficiency(insertionSort,list)
+            print("<----------------------------->")
+            print("The time for Mergesort Algorithm is below")
+            timeEfficiency(mergeSort,list)
+            print("Sorted file: ",list)
+            break
+        if(user_selection ==4):
+            file = open("rand250000.txt","r")
+            header = file.readline()
+            list = file.read().split()
+            print("The time for Insertionsort Algorithm is below")
+            timeEfficiency(insertionSort,list)
+            print("<----------------------------->")
+            print("The time for Mergesort Algorithm is below")
+            timeEfficiency(mergeSort,list)
+            print("Sorted file: ",list)
+            break
+
+        if(user_selection ==5):
+            file = open("rand500000.txt","r")
+            header = file.readline()
+            list = file.read().split()
+            print("The time for Insertionsort Algorithm is below")
+            timeEfficiency(insertionSort,list)
+            print("<----------------------------->")
+            print("The time for Mergesort Algorithm is below")
+            timeEfficiency(mergeSort,list)
+            print("Sorted file: ",list)
+            break
+        if(user_selection == 6):
             print("Exiting!")
             sys.exit(0)
 main()
