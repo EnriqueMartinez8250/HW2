@@ -120,7 +120,7 @@ input_n_factorial_7 = 1000000*60*60*24*30*12*100
 
 #####Make sure to uncomment above this###
 
-values(input_n,input_nlgn,input_n_squared, input_n_cubed,input_n_exp,input_n_factorial)
+values(input_lg_n,input_sqrt_n,input_n,input_nlgn,input_n_squared, input_n_cubed,input_n_exp,input_n_factorial)
 results_1s = values(input_n, input_nlgn, input_n_squared, input_n_cubed, input_n_factorial, input_n_exp)
 results_1m = values(input_n_2, input_nlgn_2, input_n_squared_2, input_n_cubed_2, input_n_factorial_2, input_n_exp_2)
 results_1h = values(input_n_3, input_nlgn_3, input_n_squared_3, input_n_cubed_3, input_n_factorial_3, input_n_exp_3)

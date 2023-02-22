@@ -20,9 +20,14 @@
 * problem2_official.py
 * rand1000.txt
 * rand1000000.txt
+* rand1000000.txt
+* rand250000.txt
+* rand500000.txt
 * output.html
 * table.png
 * tableexp.png
+* problem1_hang.png
+* rand1000000.png
 * README.MD
 
 # Problem 1
@@ -46,8 +51,13 @@
 ![alt text](tableexp.png "output")   
 
 
+## CSEGRID output
+Below I have taken a screenshot per Professor Sung Nams instructions to take a screenshot of the programming running on CSEgrid
+
+![alt text](problem1_hang.png "output") 
 
 # Problem 2
+
 
 ## How to run the program
 > You will run the program by either using the following command below 
@@ -61,7 +71,10 @@
 
 **Note also run the file to see output**
 
+## CSEGRID output 
+As directed per Professor Sung Nams directions to screenshot
 ## Personal output for random1000000.txt
+![alt text](rand1000000.png "output") 
 # Problem 3
 
 1. (3.1) A general description of "loop invariant technique" would be that in the most basic way I can describe, a way to prove that a statement is true at the end of each loop cycle. This allows us to prove that my loop works correctly.
